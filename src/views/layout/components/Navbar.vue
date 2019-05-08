@@ -14,17 +14,17 @@
 
         <error-log class="errLog-container right-menu-item hover-effect"/>
 
-        <!-- <screenfull class="right-menu-item hover-effect"/>
+        <screenfull class="right-menu-item hover-effect"/>
 
         <el-tooltip :content="$t('navbar.size')" effect="dark" placement="bottom">
           <size-select class="right-menu-item hover-effect"/>
-        </el-tooltip> -->
+        </el-tooltip>
 
         <lang-select class="right-menu-item hover-effect"/>
-<!-- 
+
         <el-tooltip :content="$t('navbar.theme')" effect="dark" placement="bottom">
           <theme-picker class="right-menu-item hover-effect"/>
-        </el-tooltip> -->
+        </el-tooltip>
       </template>
 
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
@@ -54,10 +54,10 @@ import { State, Getter, Action, Mutation, namespace } from "vuex-class";
 import Breadcrumb from '@/components/Breadcrumb/index.vue'
 import Hamburger from '@/components/Hamburger/index.vue'
 import ErrorLog from '@/components/ErrorLog/index.vue'
-// import Screenfull from '@/components/Screenfull/index.vue'
-// import SizeSelect from '@/components/SizeSelect/index.vue'
+import Screenfull from '@/components/Screenfull/index.vue'
+import SizeSelect from '@/components/SizeSelect/index.vue'
 import LangSelect from '@/components/LangSelect/index.vue'
-// import ThemePicker from '@/components/ThemePicker/index.vue'
+import ThemePicker from '@/components/ThemePicker/index.vue'
 // import Search from '@/components/HeaderSearch/index.vue'
 
 @Component({
@@ -66,10 +66,10 @@ import LangSelect from '@/components/LangSelect/index.vue'
     Breadcrumb,
     Hamburger,
     ErrorLog,
-    // Screenfull,
-    // SizeSelect,
+    Screenfull,
+    SizeSelect,
     LangSelect,
-    // ThemePicker,
+    ThemePicker,
     // Search
   }
 })

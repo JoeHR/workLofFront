@@ -15,6 +15,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+@Component({name:'SocialSignin'})
 export default class SocialSignin extends Vue {
   private wechatHandleClick(thirdpart: string) {
     alert("ok");

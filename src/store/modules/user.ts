@@ -89,7 +89,7 @@ const user:any = {
     // 登出
     LogOut({commit,state}:any){
       return new Promise((resolve:any,reject:any)=>{
-        this.LogOut(state.token).then(()=>{
+        logout(state.token).then(()=>{
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
           removeToken()

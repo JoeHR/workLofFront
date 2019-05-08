@@ -1,7 +1,7 @@
-<script lang="ts">
+<script lang="tsx">
 import { Component, Vue ,Prop} from "vue-property-decorator";
 
-@Component({name:'MenuItem'})
+@Component({name:'MenuItem',functional:true})
 export default class MenuItem extends Vue{
   @Prop(String) icon!:any
   @Prop(String) title!:any
@@ -13,8 +13,9 @@ export default class MenuItem extends Vue{
       vnodes.push(<svg-icon icon-class={icon}/>)
     }
     if(title){
-      vnodes.push(<span slot='title'>{{title}}</span>)
+      vnodes.push(<span slot='title'>{title}</span>)
     }
+    return vnodes
   }
 }
 </script>
